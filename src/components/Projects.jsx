@@ -1,5 +1,7 @@
 import React from "react";
 import PCard from "./PCard";
+import Frontend from "./Frontend";
+import Backend from "./Backend";
 
 const Projects = () => {
   return (
@@ -7,15 +9,15 @@ const Projects = () => {
       <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white">
         <div className="flex justify-around items-center p-4">
           <h2>Frontend</h2>
-          <div>Javascript, CSS, React, NextJS, TailwindCSS, Typescript, Sass</div>
+          <Frontend />
         </div>
         <div className="flex justify-around items-center p-4">
           <h2>Backend</h2>
-          <div>NodeJS, ExpressJS, MongoDB, Postgres, Prisma, RestAPI</div>
+          <Backend />
         </div>
       </div>
       <div>
-        <PCard/>
+        <PCard />
       </div>
     </div>
   );
