@@ -5,33 +5,33 @@ const Backend = () => {
   const backendTechnologies = [
     {
       title: "NodeJS",
-      icon: <FaNodeJs className="inline" />,
+      icon: <FaNodeJs className="inline mt-1" />,
       color: "bg-green-400",
     },
     {
       title: "ExpressJS",
-      icon: <SiExpress className="inline" />,
+      icon: <SiExpress className="inline mt-1" />,
       color: "bg-gray-400",
     },
     {
       title: "MongoDB",
-      icon: <SiMongodb className="inline" />,
+      icon: <SiMongodb className="inline mt-1" />,
       color: "bg-green-600",
     },
     {
       title: "Postgres",
-      icon: <SiPostgresql className="inline" />,
+      icon: <SiPostgresql className="inline mt-1" />,
       color: "bg-blue-500",
     },
     {
       title: "Prisma",
-      icon: <SiPrisma className="inline" />,
+      icon: <SiPrisma className="inline mt-1" />,
       color: "bg-gray-800",
     },
   ];
 
   return (
-    <div>
+    <div className="flex flex-col md:flex-row">
       {backendTechnologies.map((t, i) => (
         <p
           key={i}

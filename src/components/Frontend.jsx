@@ -45,7 +45,7 @@ const Frontend = () => {
     },
   ];
   return (
-    <div>
+    <div className="flex flex-col md:flex-row">
       {technologies.map((t, i) => (
         <p
           key={i}
