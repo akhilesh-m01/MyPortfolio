@@ -2,7 +2,7 @@ import React from 'react';
 import MyImage from '../assets/MyImage.jpeg';
 
 const About = () =>{
-  return(<div className='flex flex-col-reverse md:flex-row justify-around items-center bg-gradient-to-r from-gray-700 to-gray-800 h-[70vh]'>
+  return(<div className='flex flex-col-reverse md:flex-row justify-around items-center bg-gradient-to-r from-gray-700 to-gray-800 h-[70vh]' name="about">
     <div className='flex items-center justify-center w-96'>
       <div className="p-4 m-2 rounded-lg text-white text-xl">
         <p className='text-3xl font-bold text-blue-300'>Hey, I'm Akhilesh,</p>

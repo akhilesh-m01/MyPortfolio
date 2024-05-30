@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Resume from "../assets/Resume_04.pdf";
+import { Link } from "react-scroll";
 
 const items = "duration-300 transition ease-in-out hover:text-blue-300 m-2";
 
@@ -26,11 +28,25 @@ const Navbar = () => {
         className={`w-full md:flex md:items-center md:w-auto ${isOpen ? "" : "hidden"}`}
       >
         <ul className="flex flex-col md:flex-row md:space-x-2 md:m-2 items-center relative gap-10 text-xl w-full">
-          <li className={items}>Projects</li>
-          <li className={items}>About</li>
-          <li className={items}>Experience</li>
+          <li className={items}>
+            <Link to="about" smooth duration={500}>
+              About
+            </Link>
+          </li>
+          <li className={items}>
+              <Link to="projects" smooth duration={500}>
+                Projects
+              </Link>
+          </li>
+          <li className={items}>
+            <Link to="contact" smooth duration={500}>
+              Contact
+            </Link>
+          </li>
           <li className="duration-300 transition ease-in-out delay-150 p-2 border-solid border-2 border-white rounded-lg hover:border-blue-300 hover:text-blue-300">
-            Resume
+            <a href={Resume} target="_blank" download>
+              Resume
+            </a>
           </li>
         </ul>
       </div>

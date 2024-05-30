@@ -5,7 +5,7 @@ import Backend from "./Backend";
 
 const Projects = () => {
   return (
-    <div>
+    <div name="projects">
       <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white">
         <div className="flex justify-around items-center p-4">
           <h2>Frontend</h2>
