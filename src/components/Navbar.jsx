@@ -4,6 +4,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Resume from "../assets/Resume_04.pdf";
 import { Link } from "react-scroll";
 
+
+
 const items = "duration-300 transition ease-in-out hover:text-blue-300 m-2";
 
 const Navbar = () => {
